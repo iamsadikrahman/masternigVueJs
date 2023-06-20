@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Deep Tubewell Irrigation Calculator</h2>
+      <hr />
+      <section class="card-area">
+        <div class="card paddy-card">
+          <h3>Paddy Season Calculation</h3>
+          <label for="paddy-land">Paddy Land Size</label>
+          <input type="text" name="paddy-land" id="pals" />
+          <br />
+          <label for="paddy-irrigation-cost">Paddy Irrigation Cost</label>
+          <input type="text" name="paddy-irrigation-cost" id="paic" />
+          <br />
+          <button id="total-paddy-irrigation-cost" type="button">
+            Total Paddy Irrigation Cost
+          </button>
+          <input type="text" name="total-paddy-irrigation-cost" id="tpaic" />
+        </div>
+        <div class="card potato-card">
+          <h3>Potato Season Calculation</h3>
+          <label for="potato-land">Potato Land Size</label>
+          <input type="text" name="potato-land" id="pols" />
+          <br />
+          <label for="paady-irrigation-cost">Potato Irrigation Cost</label>
+          <input type="text" name="potato-irrigation-cost" id="poic" />
+          <br />
+          <button id="total-potato-irrigation-cost" type="button">
+            Total Potato Irrigation Cost
+          </button>
+          <input type="text" name="total-potato-irrigation-cost" id="tpoic" />
+        </div>
+
+        <div class="card full-season-calculation">
+          <h3>Full Season Final Calculation</h3>
+          <label for="total-cost">Total Cost</label>
+          <input type="text" name="total-cost" id="tc" />
+          <br />
+          <label for="advance-paid">Advanve Paid</label>
+          <input type="text" name="advance-paid" id="ap" />
+          <br />
+          <label for="current-due">Current Due</label>
+          <input type="text" name="current-due" id="cd" />
+
+          <br />
+          <label for="todat-paid">Today Paid</label>
+          <input type="text" name="todat-paid" id="tp" />
+
+          <br />
+          <label for="final-due">Final Due</label>
+          <input type="text" name="final-due" id="fd" />
+
+          <br />
+
+          <button id="customer-type" type="button">Customer Type</button>
+          <h3 id="paid-or-due"></h3>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
